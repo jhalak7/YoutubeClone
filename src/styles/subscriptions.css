@@ -1,0 +1,44 @@
+.subscriptions-page{
+    padding:12px;
+    overflow: auto;
+    width:100%;
+}
+
+.subscriptions-header{
+    width:80%;
+    margin: auto;
+    margin: 40px auto;
+}
+
+.subscriptions-header .channels{
+    width:100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:20px;
+    
+}
+
+.subscriptions-header .channels > div{
+    padding:12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition:.3s;
+    width:45%;
+    justify-content: center;
+}
+
+.subscriptions-header .channels > div img{
+    width:40px;
+    height:40px;
+    margin:auto;
+}
+
+
+.subscriptions-header .channels > div.active , .channels > div:hover {
+    background-color: var(--activeBg);
+    color:var(--activeText);
+}
+
